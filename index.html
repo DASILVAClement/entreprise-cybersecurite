@@ -15,7 +15,7 @@
     <title>Sports News Area</title>
 </head>
 <body>
-<!--    Barre de navigation-->
+<!--Barre de navigation-->
 <header>
     <nav class="navbar navbar-expand-md bg-body-tertiary">
         <div class="container-fluid">
@@ -30,13 +30,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#avis">Organigramme de l'entreprise</a>
+                        <a class="nav-link" href="#">Personnelle de l'entreprise</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item rounded-3">
-                        <a href="#tarifs" class="btn btn-danger">A propos de l'entreprise</a>
+                        <a href="#" class="btn btn-danger">A propos de l'entreprise</a>
                     </li>
                 </ul>
             </div>
@@ -45,14 +45,16 @@
 </header>
 
 <main>
-    <!--    Présentation-->
+    <!--Présentation-->
     <section id="presentation">
         <div class="container">
             <div class="row text-start">
                 <div class="col col-xl-6 ">
                     <h1 class="text-uppercase fw-bold">Sports News Area</h1>
                     <h4>Votre plongée quotidienne dans le monde du sport !</h4>
-                    <a href="#tarifs" class="btn btn-danger mt-3">Nous découvrir</a>
+                    <p>Notre entreprise est une entreprise spécialisé dans le journalisme sportif. Retrouver tous vos
+                        sports favoris, ou vous voulez et quand vous voulez.</p>
+                    <a href="#" class="btn btn-danger mt-3">Nous découvrir</a>
                 </div>
                 <div class="col col-xl-6">
                     <img style="width: 500px; height: 300px;" src="./image/image_sna.png"
@@ -63,7 +65,7 @@
         </div>
     </section>
 
-    <!--    contenu-->
+    <!--Contenu-->
     <section id="contenu" class="bg-light">
         <h1 class="text-center">Ce qui faut savoir sur l'entreprise...</h1>
         <h5 class="text-center">Voici ce que vous pourrez retrouver dans notre entreprise</h5>
@@ -132,43 +134,96 @@
         </div>
     </section>
 
-    <!--    Contact-->
-    <section id="contact">
+    <!--Entreprise-->
+    <section>
         <div class="container">
-            <h1 class="text-center">Contactez-nous !</h1>
-            <p class="text-center">Posez vos questions grâce au formulaire !</p>
-            <form class="container mx-auto w-75">
-                <div class="container text-center">
-                    <p class="text-start">Votre adresse mail :</p>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope"></i></span>
-                        <input type="text" class="form-control" placeholder="ex: clement@exemple.com"
-                               aria-label="ex: clement@exemple.com"
-                               aria-describedby="basic-addon1">
+            <div class="row">
+                <div class="card col-12 col-lg-4">
+                    <div class="card-header text-center bg-white">
+                        <h1><i class="bi bi-tv"></i> <i class="bi bi-phone"></i></h1>
                     </div>
-                    <p class="text-start">Votre numéro :</p>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon2"><i class="bi bi-person"></i></span>
-                        <input type="text" class="form-control" placeholder="ex: 06 79 ..."
-                               aria-label="ex: Clement"
-                               aria-describedby="basic-addon1">
+                    <div class="text-center">
+                        <p class="card-text d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Consectetur, earum, unde? Consequuntur, distinctio dolor ea excepturi facilis laboriosam
+                            laudantium nisi non nulla quasi quis quos rerum similique temporibus ut voluptatem?
+                        </p>
                     </div>
-                    <p class="text-start">Quel est le thème de votre question ?</p>
-                    <div class="form-floating mt-1">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                  style="height: 150px"></textarea>
-                        <label for="floatingTextarea2">Votre question...</label>
-                    </div>
-                    <input type="radio" class="btn-check " name="options" id="option1" autocomplete="off">
-                    <label class="btn btn-secondary mt-3" for="option1">Envoyer</label>
+
                 </div>
-            </form>
+
+                <div class="card col-12 col-lg-4 ">
+                    <div class="text-center">
+                        <div class="card-header text-center bg-white">
+                            <h1><i class="bi bi-newspaper"></i></h1>
+                        </div>
+                        <div class="text-center">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum enim incidunt itaque,
+                                obcaecati quis sint temporibus! Ad distinctio ea excepturi facilis qui quos, vel
+                                voluptatum! Doloribus iste libero numquam sunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-lg-4">
+                    <div class="    text-center">
+                        <div class="card-header text-center bg-white">
+                            <h1><i class="bi bi-mic"></i></h1>
+                        </div>
+                        <div class="text-center">
+                            <p class="card-text d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                                Ad
+                                aperiam aspernatur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-</main>
-<footer>
 
+    <!--Personnelle-->
+    <section id="avis" class="bg-light">
+        <div class="container">
+            <ul class="list-group col col-xl-6 ">
+                <li class="list-group-item">
+                    <h3><i class="bi bi-person"></i> DA SILVA Clément</h3>
+                </li>
+                <li class="list-group-item">
+                    <h3><i class="bi bi-person"></i> SCHIESSLE Andy</h3>
+                </li>
+                <li class="list-group-item">
+                    <h3><i class="bi bi-person"></i> SERMET Maxime</h3>
+                </li>
+                <li class="list-group-item">
+                    <h3><i class="bi bi-person"></i> TALBOT Hugo</h3>
+                </li>
+                <li class="list-group-item">
+                    <h3><i class="bi bi-person"></i> NGUYEN Phong</h3>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</main>
+
+<!--Pied de page-->
+<footer class="bg-danger" id="contact">
+    <div class="container">
+        <div class="row text-start">
+            <div class="col col-xl-6 ">
+                <p class="mt-3">Adresse mail de l'entreprise : sna@gmail.com</p>
+                <p>Numéro téléphone de l'entreprise : 06 79 05 77 67</p>
+                <p>Localisation de l'entreprise : </p>
+            </div>
+            <div class="col col-xl-6">
+                <img style="width: 300px; height: 150px;" src="./image/image_sna.png"
+                     class="justify-content-center d-md-block d-none"
+                     alt="">
+            </div>
+        </div>
+    </div>
 </footer>
+
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
