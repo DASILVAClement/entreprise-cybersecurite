@@ -16,33 +16,7 @@
 </head>
 <body>
 <!--Barre de navigation-->
-<header>
-    <nav class="navbar navbar-expand-md bg-body-tertiary">
-        <div class="container-fluid">
-            <img style="width: 180px; height: 100px;" src="./image/image_sna.png"
-                 class="justify-content-center d-md-block d-none"
-                 alt="">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Personnelle de l'entreprise</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item rounded-3">
-                        <a href="#" class="btn btn-danger">A propos de l'entreprise</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
+<?php include_once 'menu.php' ?>
 
 <main>
     <!--Présentation-->
@@ -50,9 +24,9 @@
         <div class="container">
             <div class="row text-start">
                 <div class="col col-xl-6 ">
-                    <h1 class="text-uppercase fw-bold">Sports News Area</h1>
+                    <h1 class="text-uppercase fw-bold just">Sports News Area</h1>
                     <h4>Votre plongée quotidienne dans le monde du sport !</h4>
-                    <p>Notre entreprise est une entreprise spécialisé dans le journalisme sportif. Retrouver tous vos
+                    <p>Notre entreprise est une entreprise spécialisée dans le journalisme sportif. Retrouver tous vos
                         sports favoris, ou vous voulez et quand vous voulez.</p>
                     <a href="#" class="btn btn-danger mt-3">Nous découvrir</a>
                 </div>
@@ -135,9 +109,14 @@
     </section>
 
     <!--Entreprise-->
-    <section>
+    <section id="offres">
+        <h1 class="text-center">Nos différentes offres !</h1>
+        <h5 class="text-center">Vous retrouverez toutes les offres que nous vous offrons au sein de notre
+            entreprise</h5>
+
         <div class="container">
             <div class="row">
+
                 <div class="card col-12 col-lg-4">
                     <div class="card-header text-center bg-white">
                         <h1><i class="bi bi-tv"></i> <i class="bi bi-phone"></i></h1>
@@ -147,6 +126,33 @@
                             Consectetur, earum, unde? Consequuntur, distinctio dolor ea excepturi facilis laboriosam
                             laudantium nisi non nulla quasi quis quos rerum similique temporibus ut voluptatem?
                         </p>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-danger mb-3" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                            En savoir plus
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Nos supports
+                                            numériques </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis est porro quam
+                                        sequi! Autem, ducimus labore minus natus quia quod veniam voluptas. Autem,
+                                        dolores est exercitationem pariatur provident quas similique?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
@@ -160,9 +166,37 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum enim incidunt itaque,
                                 obcaecati quis sint temporibus! Ad distinctio ea excepturi facilis qui quos, vel
                                 voluptatum! Doloribus iste libero numquam sunt.</p>
+                            <button type="button" class="btn btn-danger mb-3" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal2">
+                                En savoir plus
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                 aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                Close
+                                            </button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="card col-12 col-lg-4">
                     <div class="    text-center">
                         <div class="card-header text-center bg-white">
@@ -174,52 +208,80 @@
                                 Ad
                                 aperiam aspernatur
                             </p>
+                            <button type="button" class="btn btn-danger mb-3" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal3">
+                                En savoir plus
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                 aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                Close
+                                            </button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!--Personnelle-->
-    <section id="avis" class="bg-light">
-        <h1 class="text-center">Le personnelle de l'entreprise</h1>
+    <!--Personnel-->
+    <section id="personnel" class="bg-light">
+        <h1 class="text-center">Le personnel de l'entreprise</h1>
         <h5 class="text-center">Vous retrouverez un organigramme de l'entreprise ainsi que les fiches de postes de nos
             employés</h5>
         <div class="container mt-5">
             <div class="row text-start">
                 <div class="col col-xl-4">
-                    <ul class="list-group ">
-                        <li class="list-group-item">
-                            <h3><i class="bi bi-person"></i> DA SILVA Clément</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item border border-dark border-2">
+                            <h3 class="fw-bold"><i class="bi bi-person"></i> DA SILVA Clément</h3>
                             <p>Directeur de l'entreprise</p>
                             <a href="fiche_de_poste/fiche_de_poste_Clement.pdf" target="_blank" class="btn btn-danger">Fiche
                                 de
                                 Poste</a>
                         </li>
-                        <li class="list-group-item">
-                            <h3><i class="bi bi-person"></i> SCHIESSLE Andy</h3>
+                        <li class="list-group-item border border-dark border-2">
+                            <h3 class="fw-bold"><i class="bi bi-person"></i> SCHIESSLE Andy</h3>
                             <p>Rédacteur en chef</p>
                             <a href="fiche_de_poste/fiche_de_poste_Andy.pdf" target="_blank" class="btn btn-danger">Fiche
                                 de
                                 Poste</a>
                         </li>
-                        <li class="list-group-item">
-                            <h3><i class="bi bi-person"></i> SERMET Maxime</h3>
+                        <li class="list-group-item border border-dark border-2">
+                            <h3 class="fw-bold"><i class="bi bi-person"></i> SERMET Maxime</h3>
                             <p>Journaliste sportif</p>
                             <a href="fiche_de_poste/fiche_de_poste_Maxime.pdf" target="_blank" class="btn btn-danger">Fiche
                                 de
                                 Poste</a>
                         </li>
-                        <li class="list-group-item">
-                            <h3><i class="bi bi-person"></i> TALBOT Hugo</h3>
+                        <li class="list-group-item border border-dark border-2">
+                            <h3 class="fw-bold"><i class="bi bi-person"></i> TALBOT Hugo</h3>
                             <p>Photographe sportif</p>
                             <a href="fiche_de_poste/fiche_de_poste_Hugo.pdf" target="_blank" class="btn btn-danger">Fiche
                                 de
                                 Poste</a>
                         </li>
-                        <li class="list-group-item">
-                            <h3><i class="bi bi-person"></i> NGUYEN Phong</h3>
+                        <li class="list-group-item border border-dark border-2">
+                            <h3 class="fw-bold"><i class="bi bi-person"></i> NGUYEN Phong</h3>
                             <p>Responsable des plateformes en ligne</p>
                             <a href="fiche_de_poste/fiche_de_poste_Phong.pdf" target="_blank" class="btn btn-danger">Fiche
                                 de
@@ -237,22 +299,7 @@
 </main>
 
 <!--Pied de page-->
-<footer class="bg-danger" id="contact">
-    <div class="container">
-        <div class="row text-start text-center">
-            <div class="justify-content-center">
-                <img style="width: 300px; height: 150px;" src="./image/image_sna.png"
-                     class=""
-                     alt="">
-            </div>
-            <div class=" ">
-                <p class="mt-3">Adresse mail de l'entreprise : sna@gmail.com</p>
-                <p>Numéro téléphone de l'entreprise : 06 79 05 77 67</p>
-                <p>Localisation de l'entreprise : 91-93 Bd Léon Blum, 25000 Besançon</p>
-            </div>
-        </div>
-    </div>
-</footer>
+<?php include_once 'pied_page.php' ?>
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
