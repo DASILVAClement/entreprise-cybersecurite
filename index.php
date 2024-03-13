@@ -31,7 +31,7 @@
                     <a href="#" class="btn btn-danger mt-3">Nous découvrir</a>
                 </div>
                 <div class="col col-xl-6">
-                    <img style="width: 500px; height: 300px;" src="./image/image_sna.png"
+                    <img style="width: 500px; height: 300px;" src="./image/logo_sna_noir.png"
                          class="justify-content-center d-md-block d-none"
                          alt="">
                 </div>
@@ -46,7 +46,7 @@
         <div class="container mt-5">
             <div class="row text-start">
                 <div class="col col-xl-6">
-                    <img style="width: 450px; height: 250px;" src="./image/image_sna.png"
+                    <img style="width: 450px; height: 250px;" src="./image/logo_sna_noir.png"
                          class=""
                          alt="">
                 </div>
@@ -121,76 +121,85 @@
                     <div class="card-header text-center bg-white">
                         <h1><i class="bi bi-tv"></i> <i class="bi bi-phone"></i></h1>
                     </div>
-                    <div class="text-center">
-                        <p class="card-text d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Consectetur, earum, unde? Consequuntur, distinctio dolor ea excepturi facilis laboriosam
-                            laudantium nisi non nulla quasi quis quos rerum similique temporibus ut voluptatem?
-                        </p>
+                    <h3 class="text-center">Abonnements Numériques</h3>
+                    <p class="fs-2 text-center">15€/mois</p>
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-danger mb-3" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                            En savoir plus
-                        </button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger mb-3 mx-auto" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                        En savoir plus
+                    </button>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                             aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Nos supports
-                                            numériques </h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis est porro quam
-                                        sequi! Autem, ducimus labore minus natus quia quod veniam voluptas. Autem,
-                                        dolores est exercitationem pariatur provident quas similique?
-                                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Notre abonnement
+                                        numérique </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>
+                                            Nos différentes chaînes dédier au sport
+                                        </li>
+                                        <li>
+                                            Nos documentaires ainsi que nos longs-formats et les interviews
+                                        </li>
+                                        <li>
+                                            Application mobile gratuite
+                                        </li>
+                                        <li>
+                                            Et la possibilité d'avoir 2 comptes simultanés
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
 
                 <div class="card col-12 col-lg-4 ">
-                    <div class="text-center">
-                        <div class="card-header text-center bg-white">
-                            <h1><i class="bi bi-newspaper"></i></h1>
-                        </div>
-                        <div class="text-center">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum enim incidunt itaque,
-                                obcaecati quis sint temporibus! Ad distinctio ea excepturi facilis qui quos, vel
-                                voluptatum! Doloribus iste libero numquam sunt.</p>
-                            <button type="button" class="btn btn-danger mb-3" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal2">
-                                En savoir plus
-                            </button>
+                    <div class="card-header text-center bg-white">
+                        <h1><i class="bi bi-newspaper"></i></h1>
+                    </div>
+                    <h3 class="text-center">Abonnements Journaliers</h3>
+                    <p class="fs-2 text-center">10€/mois</p>
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                 aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            ...
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                                Close
-                                            </button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                        </div>
-                                    </div>
+                    <button type="button" class="btn btn-danger mb-3 mx-auto" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2">
+                        En savoir plus
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Notre abonnement
+                                        journalier</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>
+                                            Tous nos articles débloqués
+                                        </li>
+                                        <li>
+                                            Nos documentaires ainsi que nos longs-formats et nos podcasts
+                                        </li>
+                                        <li>
+                                            Le journal numérique
+                                        </li>
+                                        <li>
+                                            Et la possibilité d'avoir 2 comptes abonnées
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -203,11 +212,9 @@
                             <h1><i class="bi bi-mic"></i></h1>
                         </div>
                         <div class="text-center">
-                            <p class="card-text d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit.
-                                Ad
-                                aperiam aspernatur
-                            </p>
+                            <h3>Abonnements </h3>
+                            <p class="fs-2">10€/mois</p>
+
                             <button type="button" class="btn btn-danger mb-3" data-bs-toggle="modal"
                                     data-bs-target="#exampleModal3">
                                 En savoir plus
@@ -219,18 +226,26 @@
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Nos abonnements</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            ...
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                                Close
-                                            </button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            <h3 class="text-center">Avec notre abonnement journalier</h3>
+                                            <ul>
+                                                <li>
+                                                    Tous nos articles débloqués
+                                                </li>
+                                                <li>
+                                                    Nos documentaires ainsi que nos longs-formats et nos podcasts
+                                                </li>
+                                                <li>
+                                                    Le journal numérique
+                                                </li>
+                                                <li>
+                                                    Et la possibilité d'avoir 2 comptes abonnées
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -250,7 +265,7 @@
             employés</h5>
         <div class="container mt-5">
             <div class="row text-start">
-                <div class="col col-xl-4">
+                <div class="col col-xl-4 col-md-12 col-sm-12">
                     <ul class="list-group">
                         <li class="list-group-item border border-dark border-2">
                             <h3 class="fw-bold"><i class="bi bi-person"></i> DA SILVA Clément</h3>
@@ -289,8 +304,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col col-xl-6">
-                    <img src="organigramme/organigramme_employe.png" alt="">
+                <div class="col col-xl-8 col-md-12 col-sm-12">
+                    <img class="img-fluid d-md-block d-none" style="width: 900px; height: 700px;"
+                         src="organigramme/organigramme_employe.png" alt="">
                 </div>
             </div>
         </div>

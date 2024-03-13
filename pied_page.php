@@ -75,7 +75,8 @@
 
                 <div class="col-6 col-md-2 mb-3">
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><img style="width: 300px; height: 150px;" src="./image/image_sna.png"
+                        <li class="nav-item mb-2"><img style="width: 300px; height: 150px;"
+                                                       src="./image/logo_sna_noir.png"
                                                        class="justify-content-center d-md-block d-none"
                                                        alt=""></li>
                     </ul>

@@ -17,10 +17,10 @@
 <body>
 <!--Barre de navigation-->
 <header>
-    <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
             <a href="index.php">
-                <img style="width: 180px; height: 100px;" src="./image/image_sna.png"
+                <img style="width: 200px; height: 100px;" src="./image/logo_sna_blanc.png"
                      class="justify-content-center d-md-block d-none"
                      alt="">
             </a>
@@ -32,13 +32,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Personnel de l'entreprise</a>
+                        <a class="nav-link" href="./index.php#personnel">Personnel de l'entreprise</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                     <li class="nav-item rounded-3">
-                        <a href="#" class="btn btn-danger">A propos de l'entreprise</a>
+                        <a href="index.php" class="btn btn-danger">Retour</a>
                     </li>
                 </ul>
             </div>
