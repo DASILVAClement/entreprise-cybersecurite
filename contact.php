@@ -14,7 +14,7 @@
     </style>
     <title>Sports News Area</title>
 </head>
-<body>
+<body class="bg-light">
 <?php include_once 'menu.php' ?>
 
 <section id="contact">

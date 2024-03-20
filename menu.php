@@ -21,7 +21,7 @@
         <div class="container-fluid">
             <a href="index.php">
                 <img style="width: 200px; height: 100px;" src="./image/logo_sna_blanc.png"
-                     class="justify-content-center d-md-block d-none"
+                     class="justify-content-center"
                      alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -32,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.php#personnel">Personnel de l'entreprise</a>
+                        <a class="nav-link" href="personnel_entreprise.php">Personnel de l'entreprise</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.php">Contact</a>

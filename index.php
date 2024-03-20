@@ -23,7 +23,7 @@
     <section id="presentation">
         <div class="container">
             <div class="row text-start">
-                <div class="col col-xl-6 ">
+                <div class="col col-xl-6">
                     <h1 class="text-uppercase fw-bold just">Sports News Area</h1>
                     <h4>Votre plongée quotidienne dans le monde du sport !</h4>
                     <p>Notre entreprise est une entreprise spécialisée dans le journalisme sportif. Retrouver tous vos
@@ -117,12 +117,56 @@
         <div class="container">
             <div class="row">
 
+                <div class="card col-12 col-lg-4 ">
+                    <div class="card-header text-center bg-white">
+                        <h1><i class="bi bi-newspaper"></i></h1>
+                    </div>
+                    <h3 class="text-center">Abonnements Journaliers</h3>
+                    <p class="fs-2 text-center">9,99€/mois</p>
+
+                    <button type="button" class="btn btn-danger mb-3 mx-auto" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2">
+                        En savoir plus
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Notre abonnement
+                                        journalier</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>
+                                            Tous nos articles débloqués
+                                        </li>
+                                        <li>
+                                            Nos documentaires ainsi que nos longs-formats et nos podcasts
+                                        </li>
+                                        <li>
+                                            Le journal numérique
+                                        </li>
+                                        <li>
+                                            Et la possibilité d'avoir 2 comptes abonnées
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="card col-12 col-lg-4">
                     <div class="card-header text-center bg-white">
                         <h1><i class="bi bi-tv"></i> <i class="bi bi-phone"></i></h1>
                     </div>
                     <h3 class="text-center">Abonnements Numériques</h3>
-                    <p class="fs-2 text-center">15€/mois</p>
+                    <p class="fs-2 text-center">19,99€/mois</p>
 
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-danger mb-3 mx-auto" data-bs-toggle="modal"
@@ -136,7 +180,7 @@
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Notre abonnement
+                                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Notre abonnement
                                         numérique </h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
@@ -164,40 +208,40 @@
 
                 <div class="card col-12 col-lg-4 ">
                     <div class="card-header text-center bg-white">
-                        <h1><i class="bi bi-newspaper"></i></h1>
+                        <h1><i class="bi bi-mic"></i></h1>
                     </div>
-                    <h3 class="text-center">Abonnements Journaliers</h3>
-                    <p class="fs-2 text-center">10€/mois</p>
+                    <h3 class="text-center">Abonnements privilégié</h3>
+                    <p class="fs-2 text-center">55€/mois</p>
 
                     <button type="button" class="btn btn-danger mb-3 mx-auto" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal2">
+                            data-bs-target="#exampleModal3">
                         En savoir plus
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
                          aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Notre abonnement
-                                        journalier</h1>
+                                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Notre abonnement
+                                        privilégié</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <ul>
                                         <li>
-                                            Tous nos articles débloqués
+                                            Nos deux versions d'abonnements sont comprises dans l'abonnement
                                         </li>
                                         <li>
-                                            Nos documentaires ainsi que nos longs-formats et nos podcasts
+                                            Vous pourrez assister à nos émissions en plateau
                                         </li>
                                         <li>
-                                            Le journal numérique
+                                            Vous pourrez participer à nos podcasts
                                         </li>
                                         <li>
-                                            Et la possibilité d'avoir 2 comptes abonnées
+                                            Et tentez de gagner des places tous les mois pour votre sport favoris !
                                         </li>
                                     </ul>
                                 </div>
@@ -206,111 +250,10 @@
                     </div>
                 </div>
 
-                <div class="card col-12 col-lg-4">
-                    <div class="    text-center">
-                        <div class="card-header text-center bg-white">
-                            <h1><i class="bi bi-mic"></i></h1>
-                        </div>
-                        <div class="text-center">
-                            <h3>Abonnements </h3>
-                            <p class="fs-2">10€/mois</p>
-
-                            <button type="button" class="btn btn-danger mb-3" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal3">
-                                En savoir plus
-                            </button>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                 aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Nos abonnements</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h3 class="text-center">Avec notre abonnement journalier</h3>
-                                            <ul>
-                                                <li>
-                                                    Tous nos articles débloqués
-                                                </li>
-                                                <li>
-                                                    Nos documentaires ainsi que nos longs-formats et nos podcasts
-                                                </li>
-                                                <li>
-                                                    Le journal numérique
-                                                </li>
-                                                <li>
-                                                    Et la possibilité d'avoir 2 comptes abonnées
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!--Personnel-->
-    <section id="personnel" class="bg-light">
-        <h1 class="text-center">Le personnel de l'entreprise</h1>
-        <h5 class="text-center">Vous retrouverez un organigramme de l'entreprise ainsi que les fiches de postes de nos
-            employés</h5>
-        <div class="container mt-5">
-            <div class="row text-start">
-                <div class="col col-xl-4 col-md-12 col-sm-12">
-                    <ul class="list-group">
-                        <li class="list-group-item border border-dark border-2">
-                            <h3 class="fw-bold"><i class="bi bi-person"></i> DA SILVA Clément</h3>
-                            <p>Directeur de l'entreprise</p>
-                            <a href="fiche_de_poste/fiche_de_poste_Clement.pdf" target="_blank" class="btn btn-danger">Fiche
-                                de
-                                Poste</a>
-                        </li>
-                        <li class="list-group-item border border-dark border-2">
-                            <h3 class="fw-bold"><i class="bi bi-person"></i> SCHIESSLE Andy</h3>
-                            <p>Rédacteur en chef</p>
-                            <a href="fiche_de_poste/fiche_de_poste_Andy.pdf" target="_blank" class="btn btn-danger">Fiche
-                                de
-                                Poste</a>
-                        </li>
-                        <li class="list-group-item border border-dark border-2">
-                            <h3 class="fw-bold"><i class="bi bi-person"></i> SERMET Maxime</h3>
-                            <p>Journaliste sportif</p>
-                            <a href="fiche_de_poste/fiche_de_poste_Maxime.pdf" target="_blank" class="btn btn-danger">Fiche
-                                de
-                                Poste</a>
-                        </li>
-                        <li class="list-group-item border border-dark border-2">
-                            <h3 class="fw-bold"><i class="bi bi-person"></i> TALBOT Hugo</h3>
-                            <p>Photographe sportif</p>
-                            <a href="fiche_de_poste/fiche_de_poste_Hugo.pdf" target="_blank" class="btn btn-danger">Fiche
-                                de
-                                Poste</a>
-                        </li>
-                        <li class="list-group-item border border-dark border-2">
-                            <h3 class="fw-bold"><i class="bi bi-person"></i> NGUYEN Phong</h3>
-                            <p>Responsable des plateformes en ligne</p>
-                            <a href="fiche_de_poste/fiche_de_poste_Phong.pdf" target="_blank" class="btn btn-danger">Fiche
-                                de
-                                Poste</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col col-xl-8 col-md-12 col-sm-12">
-                    <img class="img-fluid d-md-block d-none" style="width: 900px; height: 700px;"
-                         src="organigramme/organigramme_employe.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
 
 </main>
 

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         section {
-            padding: 60px 0;
+            padding: 150px 0;
         }
     </style>
     <title>Sports News Area</title>
@@ -24,16 +24,18 @@
                     <h5>SNA</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2">
-                            <a href="#presentation" class="nav-link p-0 text-muted"><i class="bi bi-house"></i> Accueil</a>
+                            <a href="./index.php#presentation" class="nav-link p-0 text-muted"><i
+                                        class="bi bi-house"></i> Accueil</a>
                         </li>
                         <li class="nav-item mb-2">
-                            <a href="#contenu" class="nav-link p-0 text-muted"><i class="bi bi-building"></i> A propos
+                            <a href="./index.php#contenu" class="nav-link p-0 text-muted"><i class="bi bi-building"></i>
+                                A propos
                                 de
                                 nous</a>
                         </li>
-                        <li class="nav-item mb-2"><a href="#offres" class="nav-link p-0 text-muted"><i
+                        <li class="nav-item mb-2"><a href="./index.php#offres" class="nav-link p-0 text-muted"><i
                                         class="bi bi-currency-euro"></i> Nos offres</a></li>
-                        <li class="nav-item mb-2"><a href="#personnel" class="nav-link p-0 text-muted"><i
+                        <li class="nav-item mb-2"><a href="personnel_entreprise.php" class="nav-link p-0 text-muted"><i
                                         class="bi bi-person"></i> Notre
                                 personnel</a>
                         </li>
@@ -76,9 +78,7 @@
                 <div class="col-6 col-md-2 mb-3">
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><img style="width: 300px; height: 150px;"
-                                                       src="./image/logo_sna_noir.png"
-                                                       class="justify-content-center d-md-block d-none"
-                                                       alt=""></li>
+                                                       src="./image/logo_sna_noir.png" alt=""></li>
                     </ul>
                 </div>
 
