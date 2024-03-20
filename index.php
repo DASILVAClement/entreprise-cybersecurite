@@ -28,7 +28,7 @@
                     <h4>Votre plongée quotidienne dans le monde du sport !</h4>
                     <p>Notre entreprise est une entreprise spécialisée dans le journalisme sportif. Retrouver tous vos
                         sports favoris, ou vous voulez et quand vous voulez.</p>
-                    <a href="#" class="btn btn-danger mt-3">Nous découvrir</a>
+                    <a href="#contenu" class="btn btn-danger mt-3">Nous découvrir</a>
                 </div>
                 <div class="col col-xl-6">
                     <img style="width: 500px; height: 300px;" src="./image/logo_sna_noir.png"
@@ -41,8 +41,8 @@
 
     <!--Contenu-->
     <section id="contenu" class="bg-light">
-        <h1 class="text-center">Ce qui faut savoir sur l'entreprise...</h1>
-        <h5 class="text-center">Voici ce que vous pourrez retrouver dans notre entreprise</h5>
+        <h1 class="text-center">Ce que notre entreprise vous propose...</h1>
+        <h5 class="text-center">Voici les différents aspects de notre entreprise</h5>
         <div class="container mt-5">
             <div class="row text-start">
                 <div class="col col-xl-6">
@@ -55,19 +55,28 @@
                         <h2 class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Les différents sports disponible sur la plateforme
+                                Retrouvez nos plus belles s'offrent
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show"
                              data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Grâce à beIN SPORTS, retrouver les plus grandes compétitions de sport au monde.
-                                Principalement le football, avec la CAN, la league des champions, la coupe de France, la
-                                seria
-                                A, la bundesliga, la LIGA. La plus grande compétition de basket au monde avec la NBA de
-                                même que la NFL, le football Américain. Ainsi que les plus grande compétition de Tennis
-                                avec la WTA, la compétition féminines de Tennis ! <br>Retrouver vos plus grande
-                                compétition sur beIN SPORTS !
+                                Grâce à Sports New Area, retrouvez les plus grands sports dans le format qui vous
+                                convient le mieux avec nos offres :
+                                <br>
+                                <ul>
+                                    <li>
+                                        Notre offre Journalière
+                                    </li>
+                                    <li>
+                                        Notre offre Numérique
+                                    </li>
+                                    <li>
+                                        Notre offre Privilégié
+                                    </li>
+                                </ul>
+                                <a href="#offres" class="btn btn-danger mt-3 mx-auto justify-content-center">Pour en
+                                    savoir plus </a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +84,7 @@
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Le nombre d'écran simultané possible
+                                Le nombre d'écrans simultané possible
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -149,7 +158,7 @@
                                             Nos documentaires ainsi que nos longs-formats et nos podcasts
                                         </li>
                                         <li>
-                                            Le journal numérique
+                                            Le journal papier ainsi que numérique
                                         </li>
                                         <li>
                                             Et la possibilité d'avoir 2 comptes abonnées
@@ -210,7 +219,7 @@
                     <div class="card-header text-center bg-white">
                         <h1><i class="bi bi-mic"></i></h1>
                     </div>
-                    <h3 class="text-center">Abonnements privilégié</h3>
+                    <h3 class="text-center">Abonnements privilégiés</h3>
                     <p class="fs-2 text-center">55€/mois</p>
 
                     <button type="button" class="btn btn-danger mb-3 mx-auto" data-bs-toggle="modal"
