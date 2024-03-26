@@ -18,7 +18,7 @@
 <?php include_once 'menu.php' ?>
 
 <section id="contact">
-    <div class="container">
+    <div class="container text-black">
         <h1 class="text-center">Contactez-nous !</h1>
         <p class="text-center">Posez vos questions grâce au formulaire !</p>
         <form class="container mx-auto w-75">
@@ -44,7 +44,7 @@
                     <label for="floatingTextarea2">Votre question...</label>
                 </div>
                 <input type="radio" class="btn-check " name="options" id="option1" autocomplete="off">
-                <label class="btn btn-secondary mt-3" for="option1">Envoyer</label>
+                <label class="btn btn-danger mt-3" for="option1">Envoyer</label>
             </div>
         </form>
     </div>

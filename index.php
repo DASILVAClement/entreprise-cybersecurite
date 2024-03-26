@@ -41,7 +41,7 @@
 
     <!--Contenu-->
     <section id="contenu" class="bg-light">
-        <h1 class="text-center">Ce que notre entreprise vous propose...</h1>
+        <h1 class="text-center">Ce qu'il faut savoir à propos de notre entreprise...</h1>
         <h5 class="text-center">Voici les différents aspects de notre entreprise</h5>
         <div class="container mt-5">
             <div class="row text-start">
@@ -55,11 +55,32 @@
                         <h2 class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Retrouvez nos plus belles s'offrent
+                                A propos de notre entreprise
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show"
                              data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Nous sommes un jeune entreprise spécialisé dans le journalisme sportif. Malgré notre
+                                    commencement de notre entreprise, nous comptons des jeunes talents d'expérience.
+                                    Notre
+                                    entreprise située à Besançon ne nous empêche pas de couvrir la plupart des
+                                    événements
+                                    sportifs mondiaux.</p>
+                                <a href="personnel_entreprise.php"
+                                   class="btn btn-danger mt-3 mx-auto justify-content-center">Pour en
+                                    savoir plus sur nos employé</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Retrouvez nos plus belles s'offrent
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 Grâce à Sports New Area, retrouvez les plus grands sports dans le format qui vous
                                 convient le mieux avec nos offres :
@@ -77,38 +98,6 @@
                                 </ul>
                                 <a href="#offres" class="btn btn-danger mt-3 mx-auto justify-content-center">Pour en
                                     savoir plus </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Le nombre d'écrans simultané possible
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Le nombre d'écran en simultané dépend de l'abonnement que vous choisissez. L'abonnement
-                                étudiant vous permettra de vous connecté à un seul écran en simultané, contrairement aux
-                                deux autres abonnement, qui eux vous prmettrons de vous connecter jusqu'a 5 écrans en
-                                simultanés.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                L'accès aux différentes iterviews et documentaires de la chaîne
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Nos plus documentaires et interviews sont à retrouver sur notre application, site web ou
-                                en replay sur votre télévision. <br>Cette exclusivité est réservée seulement aux abonnés
-                                de
-                                l'édition standard ou premium.
                             </div>
                         </div>
                     </div>

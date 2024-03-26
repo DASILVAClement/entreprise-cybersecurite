@@ -50,8 +50,8 @@
                                 79 05 77 67</a>
                         </li>
                         <li class="nav-item mb-2">
-                            <a class="nav-link p-0 text-muted"><i class="bi bi-envelope"></i>
-                                sna@gmail.com</a>
+                            <a href="mailto:sna@gmail.com" class="nav-link p-0 text-muted"><i
+                                        class="bi bi-envelope"></i> sna@gmail.com</a>
                         </li>
                     </ul>
                     <h5>Localisations</h5>
