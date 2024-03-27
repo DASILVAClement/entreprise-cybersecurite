@@ -23,14 +23,14 @@
     <section id="presentation">
         <div class="container">
             <div class="row text-start">
-                <div class="col col-xl-6">
+                <div class="col col-xl-6 text-center">
                     <h1 class="text-uppercase fw-bold just">Sports News Area</h1>
                     <h4>Votre plongée quotidienne dans le monde du sport !</h4>
                     <p>Notre entreprise est une entreprise spécialisée dans le journalisme sportif. Retrouver tous vos
                         sports favoris, ou vous voulez et quand vous voulez.</p>
                     <a href="#contenu" class="btn btn-danger mt-3">Nous découvrir</a>
                 </div>
-                <div class="col col-xl-6">
+                <div class="col col-xl-6 ">
                     <img style="width: 500px; height: 300px;" src="./image/logo_sna_noir.png"
                          class="justify-content-center d-md-block d-none"
                          alt="">
@@ -41,7 +41,7 @@
 
     <!--Contenu-->
     <section id="contenu" class="bg-light">
-        <h1 class="text-center">Ce qu'il faut savoir à propos de notre entreprise...</h1>
+        <h1 class="text-center">Ce qu'il faut savoir à propos de notre entreprise et de nos services...</h1>
         <h5 class="text-center">Voici les différents aspects de notre entreprise</h5>
         <div class="container mt-5">
             <div class="row text-start">
@@ -70,6 +70,29 @@
                                 <a href="personnel_entreprise.php"
                                    class="btn btn-danger mt-3 mx-auto justify-content-center">Pour en
                                     savoir plus sur nos employé</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Nos services proposés
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Grâce à notre équipe, nous pouvons proposer différents services en tous genres :
+                                <br>
+                                <ul>
+                                    <li>
+                                        Service de journalisme
+                                    </li>
+                                    <li>
+                                        Service de photographie sportive
+                                    </li>
+                                </ul>
+
                             </div>
                         </div>
                     </div>
