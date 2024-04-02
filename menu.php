@@ -38,7 +38,7 @@
                         <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                     <li class="nav-item rounded-3">
-                        <a href="index.php" class="btn btn-danger">Retour</a>
+                        <a href="index.php" class="btn btn-danger">Accueil</a>
                     </li>
                 </ul>
             </div>
