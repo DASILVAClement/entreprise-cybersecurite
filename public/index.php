@@ -1,3 +1,11 @@
+<?php
+
+require_once '../base.php';
+require_once BASE_PROJET . '/src/database/film-db.php';
+
+?>
+
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -5,7 +13,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         section {
@@ -16,7 +24,9 @@
 </head>
 <body>
 <!--Barre de navigation-->
-<?php include_once '_partials/menu.php' ?>
+<?php
+require_once BASE_PROJET . '/src/_partials/header.php';
+?>
 
 <main>
     <!--Présentation-->
@@ -31,7 +41,7 @@
                     <a href="#contenu" class="btn btn-danger mt-3">Nous découvrir</a>
                 </div>
                 <div class="col col-xl-6 ">
-                    <img style="width: 500px; height: 300px;" src="./image/logo_sna_noir.png"
+                    <img style="width: 500px; height: 300px;" src="assets/images/logo_sna_noir.png"
                          class="justify-content-center d-md-block d-none"
                          alt="">
                 </div>
@@ -46,7 +56,7 @@
         <div class="container mt-5">
             <div class="row text-start">
                 <div class="col col-xl-6">
-                    <img style="width: 450px; height: 250px;" src="./image/logo_sna_noir.png"
+                    <img style="width: 450px; height: 250px;" src="assets/images/logo_sna_noir.png"
                          class=""
                          alt="">
                 </div>
@@ -67,7 +77,7 @@
                                     entreprise située à Besançon ne nous empêche pas de couvrir la plupart des
                                     événements
                                     sportifs mondiaux.</p>
-                                <a href="personnel_entreprise.php"
+                                <a href="personnel-entreprise.php"
                                    class="btn btn-danger mt-3 mx-auto justify-content-center">Pour en
                                     savoir plus sur nos employé</a>
                             </div>
@@ -279,7 +289,9 @@
 </main>
 
 <!--Pied de page-->
-<?php include_once '_partials/pied_page.php' ?>
+<?php
+require_once BASE_PROJET . '/src/_partials/footer.php';
+?>
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>

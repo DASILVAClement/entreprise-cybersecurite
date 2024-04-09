@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../public/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         section {
@@ -24,19 +24,21 @@
                     <h5>SNA</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2">
-                            <a href="../index.php#presentation" class="nav-link p-0 text-muted"><i
+                            <a href="<?php BASE_PROJET ?>/index.php" class="nav-link p-0 text-muted"><i
                                         class="bi bi-house"></i> Accueil</a>
                         </li>
                         <li class="nav-item mb-2">
-                            <a href="../index.php#contenu" class="nav-link p-0 text-muted"><i
+                            <a href="<?php BASE_PROJET ?>/index.php#contenu" class="nav-link p-0 text-muted"><i
                                         class="bi bi-building"></i>
                                 A propos
                                 de
                                 nous</a>
                         </li>
-                        <li class="nav-item mb-2"><a href="../index.php#offres" class="nav-link p-0 text-muted"><i
+                        <li class="nav-item mb-2"><a href="<?php BASE_PROJET ?>/index.php#offres"
+                                                     class="nav-link p-0 text-muted"><i
                                         class="bi bi-currency-euro"></i> Nos offres</a></li>
-                        <li class="nav-item mb-2"><a href="../personnel_entreprise.php" class="nav-link p-0 text-muted"><i
+                        <li class="nav-item mb-2"><a href="<?php BASE_PROJET ?>/personnel-entreprise.php"
+                                                     class="nav-link p-0 text-muted"><i
                                         class="bi bi-person"></i> Notre
                                 personnel</a>
                         </li>
@@ -71,7 +73,7 @@
                         <h5>Nous contactez !</h5>
                         <p>Utilisez notre formulaire pour toute questions</p>
                         <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <a href="../contact.php" class="btn btn-dark">Contact</a>
+                            <a href="<?php BASE_PROJET ?>/contact.php" class="btn btn-dark">Contact</a>
                         </div>
                     </form>
                 </div>
@@ -79,7 +81,8 @@
                 <div class="col-6 col-md-2 mb-3">
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><img style="width: 300px; height: 150px;"
-                                                       src="../image/logo_sna_noir.png" alt=""></li>
+                                                       src="<?php BASE_PROJET ?>/assets/images/logo_sna_noir.png"
+                                                       alt=""></li>
                     </ul>
                 </div>
 
@@ -88,6 +91,6 @@
     </div>
 </div>
 
-<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../../public/assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
