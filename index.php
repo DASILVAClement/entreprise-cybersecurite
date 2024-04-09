@@ -16,7 +16,7 @@
 </head>
 <body>
 <!--Barre de navigation-->
-<?php include_once 'menu.php' ?>
+<?php include_once '_partials/menu.php' ?>
 
 <main>
     <!--Présentation-->
@@ -279,7 +279,7 @@
 </main>
 
 <!--Pied de page-->
-<?php include_once 'pied_page.php' ?>
+<?php include_once '_partials/pied_page.php' ?>
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>

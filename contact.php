@@ -15,7 +15,7 @@
     <title>Sports News Area</title>
 </head>
 <body class="bg-light">
-<?php include_once 'menu.php' ?>
+<?php include_once '_partials/menu.php' ?>
 
 <section id="contact">
     <div class="container text-black">
@@ -50,7 +50,7 @@
     </div>
 </section>
 
-<?php include_once 'pied_page.php' ?>
+<?php include_once '_partials/pied_page.php' ?>
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
