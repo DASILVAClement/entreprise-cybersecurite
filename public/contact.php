@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 require_once '../base.php';
 require_once BASE_PROJET . '/src/database/film-db.php';

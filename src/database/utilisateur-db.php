@@ -6,7 +6,7 @@ require_once BASE_PATH . '/src/config/db-config.php';
 function getUser($email_utilisateur): array
 {
     $pdo = getConnexion();
-    $requete_email = $pdo->prepare("SELECT * FROM utilisateur WHERE email_utilisateur=?");
+    $requete_email = $pdo->prepare("SELECT * FROM film WHERE email_utilisateur=?");
     $requete_email->execute([$email_utilisateur]);
     $user = $requete_email->fetchAll(PDO::FETCH_ASSOC);
     return $user;

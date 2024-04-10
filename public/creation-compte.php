@@ -1,7 +1,7 @@
 <?php
 
 require_once '../base.php';
-require_once BASE_PROJET . '/src/database/utilisateur-db.php';
+require_once BASE_PROJET . '/src/database/client-db.php';
 
 
 // Déterminer si le formulaire a été soumis
@@ -67,12 +67,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         } else {
 
             if (empty($erreurs)) {
-                postClient($pseudo_utilisateur, $email_utilisateur, $mdp_utilisateur);
+                postClient($nom_client, $prenom_client, $adresse_client, $email_client, $pseudo_client, $mdp_client);
                 session_start();
-                $_SESSION["utilisateur"] = [
-                    "pseudo_utilisateur" => $pseudo_utilisateur,
-                    "email_utilisateur" => $email_utilisateur,
-                    "mdp_utilisateur" => $mdp_utilisateur
+                $_SESSION["client"] = [
+                    "nom_client" => $nom_client,
+                    "prenom_client" => $prenom_client,
+                    "adresse_client" => $adresse_client,
+                    "email_client" => $email_client,
+                    "pseudo_client" => $pseudo_client,
+                    "mdp_client" => $mdp_client
                 ];
                 header("Location: /index.php");
                 exit();
@@ -193,7 +196,7 @@ require_once BASE_PROJET . '/src/_partials/header.php';
 
             <div class="mb-3">
 
-                <label for="pseudo_client" class="form-label">Prénom*</label>
+                <label for="pseudo_client" class="form-label">Pseudo*</label>
                 <input type="text"
                        class="form-control <?= (isset($erreurs['pseudo_client'])) ? "border border-2 border-danger" : "" ?>"
                        id="pseudo_client" name="pseudo_client" value="<?= $pseudo_client ?>"

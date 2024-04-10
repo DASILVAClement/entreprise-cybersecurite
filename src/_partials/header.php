@@ -14,8 +14,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
+
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php BASE_PROJET ?>/personnel-entreprise">
+                        <a class="nav-link" href="<?php BASE_PROJET ?>/personnel-entreprise.php">
                             <button type="button" class="btn bg-white border-2 text-black rounded-3">Personnel de
                                 l'entreprise
                             </button>
@@ -33,18 +34,34 @@
                             </button>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php BASE_PROJET ?>/connexion-compte.php">
-                            <button type="button" class="btn bg-white border-2 text-black rounded-3">Connexion
-                            </button>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php BASE_PROJET ?>/creation-compte.php">
-                            <button type="button" class="btn bg-white border-2 text-black rounded-3">Inscription
-                            </button>
-                        </a>
-                    </li>
+
+                    <?php if (empty($_SESSION)) : ?>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php BASE_PROJET ?>/connexion-compte.php">
+                                <button type="button" class="btn bg-white border-2 text-black rounded-3">Connexion
+                                </button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php BASE_PROJET ?>/creation-compte.php">
+                                <button type="button" class="btn bg-white border-2 text-black rounded-3">Inscription
+                                </button>
+                            </a>
+                        </li>
+
+                    <?php else : ?>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php BASE_PROJET ?>/deconnexion-compte.php">
+                                <button type="button" class="btn btn-danger border-2 text-black rounded-3">
+                                    Deconnexion
+                                </button>
+                            </a>
+                        </li>
+
+                    <?php endif; ?>
+
                 </ul>
             </div>
         </div>
