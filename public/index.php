@@ -2,7 +2,6 @@
 session_start();
 
 require_once '../base.php';
-require_once BASE_PROJET . '/src/database/film-db.php';
 require_once BASE_PROJET . '/src/database/produit-db.php';
 
 $produits = getProduits();
@@ -44,7 +43,7 @@ require_once BASE_PROJET . '/src/_partials/header.php';
         <div class="container">
 
             <?php if ($client) : ?>
-                <p class="text-black">Bienvenue <?= $client["pseudo_client"] ?> </p>
+                <h1 class="text-black">Bienvenue <?= $client["pseudo_client"] ?> </h1>
             <?php endif; ?>
 
             <div class="row text-start">
@@ -171,6 +170,7 @@ require_once BASE_PROJET . '/src/_partials/header.php';
                         </div>
                         <h3 class="text-center"><?= $produit["designation_prod"] ?></h3>
                         <p class="fs-2 text-center"><?= $produit["prix_prod"] ?>€</p>
+                        <a href="devis.php?id_prod=<?= $produit["id_prod"] ?>" class="btn bg-danger ">Commander</a>
 
                         <button type="button" class="btn btn-danger mb-3 mx-auto" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal2">
@@ -196,6 +196,8 @@ require_once BASE_PROJET . '/src/_partials/header.php';
                                             </li>
 
                                         </ul>
+
+
                                     </div>
                                 </div>
                             </div>

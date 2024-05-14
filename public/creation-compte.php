@@ -1,12 +1,11 @@
 <?php
 
+session_start();
+
 require_once '../base.php';
 require_once BASE_PROJET . '/src/database/client-db.php';
 
 
-// Déterminer si le formulaire a été soumis
-// Utilisation d'une variable superglobale $_SERVER
-// $_SERVER : tableau associatif contenant des informations sur la requête HTTP
 $erreurs = [];
 $nom_client = "";
 $prenom_client = "";
@@ -68,14 +67,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             if (empty($erreurs)) {
                 postClient($nom_client, $prenom_client, $adresse_client, $email_client, $pseudo_client, $mdp_client);
-                session_start();
+
                 $_SESSION["client"] = [
                     "nom_client" => $nom_client,
                     "prenom_client" => $prenom_client,
                     "adresse_client" => $adresse_client,
                     "email_client" => $email_client,
                     "pseudo_client" => $pseudo_client,
-                    "mdp_client" => $mdp_client
                 ];
                 header("Location: /index.php");
                 exit();
@@ -221,7 +219,7 @@ require_once BASE_PROJET . '/src/_partials/header.php';
                      aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
-                            <div class="modal-header bg-warning">
+                            <div class="modal-header bg-danger">
                                 <h1 class="modal-title fs-5" id="exampleModalLabel">Les caractéristiques de votre mot de
                                     passe </h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"

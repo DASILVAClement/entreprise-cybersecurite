@@ -1,4 +1,3 @@
-<!--Barre de navigation-->
 <header>
     <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
         <div class="container-fluid">

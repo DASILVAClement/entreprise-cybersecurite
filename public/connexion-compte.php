@@ -7,21 +7,15 @@ if (!empty($_SESSION)) {
     header("Location: index.php");
 }
 
-// Déterminer si le formulaire a été soumis
-// Utilisation d'une variable superglobale $_SERVER
-// $_SERVER : tableau associatif contenant des informations sur la requête HTTP
+
 $erreurs = [];
 $email_client = "";
 $mdp_client = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    // Le formulaire a été soumis !
-    // Traiter les données du formulaire
-    // Récupérer les valeurs saisies par l'utilisateur
-    // Superglobale $_POST : tableau associatif
     $email_client = $_POST['email_client'];
     $mdp_client = $_POST['mdp_client'];
-    //Validation des données
+
     if (empty($email_client)) {
         $erreurs['email_client'] = "L'email est obligatoire";
     } elseif (!filter_var($email_client, FILTER_VALIDATE_EMAIL)) {
@@ -156,6 +150,21 @@ require_once BASE_PROJET . '/src/_partials/header.php';
         </form>
     </div>
 </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <?php
 require_once BASE_PROJET . '/src/_partials/footer.php';

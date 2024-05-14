@@ -25,7 +25,6 @@ function postClient($nom_client, $prenom_client, $adresse_client, $email_client,
     $requete->bindParam(5, $pseudo_client);
     $requete->bindParam(6, password_hash($mdp_client, PASSWORD_DEFAULT));
 
-    // 3. Exécution de la requête
     $requete->execute();
 }
 
