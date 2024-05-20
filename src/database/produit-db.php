@@ -16,7 +16,7 @@ function getProduits(): array
 
 }
 
-function getProduitId(?int $id_prod): array|bool
+function getProduitParId(?int $id_prod): array|bool
 {
     $pdo = getConnexion();
     $requete = $pdo->prepare("SELECT * FROM produit WHERE id_prod = :id");

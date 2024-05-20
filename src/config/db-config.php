@@ -1,8 +1,6 @@
 <?php
 
 
-// Définir les informations de connexion
-
 const DB_HOST = "localhost:3306";
 const DB_NAME = "db_entreprise_cyber";
 const DB_USER = "root";

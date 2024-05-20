@@ -23,6 +23,7 @@ if (isset($_SESSION["client"])) {
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/section.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         section {
@@ -39,12 +40,13 @@ require_once BASE_PROJET . '/src/_partials/header.php';
 
 <main>
     <!--Présentation-->
-    <section id="presentation">
-        <div class="container">
+    <section id="presentation" class="section-border">
 
-            <?php if ($client) : ?>
-                <h1 class="text-black">Bienvenue <?= $client["pseudo_client"] ?> </h1>
-            <?php endif; ?>
+        <?php if ($client) : ?>
+            <h1 class="text-black text-center mb-5">Bienvenue <?= $client["pseudo_client"] ?> </h1>
+        <?php endif; ?>
+
+        <div class="container">
 
             <div class="row text-start">
                 <div class="col col-xl-6 text-center">
@@ -64,15 +66,17 @@ require_once BASE_PROJET . '/src/_partials/header.php';
     </section>
 
     <!--Contenu-->
-    <section id="contenu" class="bg-light">
+    <section id="contenu" class="section-border bg-light">
         <h1 class="text-center">Ce qu'il faut savoir à propos de notre entreprise et de nos services...</h1>
         <h5 class="text-center">Voici les différents aspects de notre entreprise</h5>
         <div class="container mt-5">
             <div class="row text-start">
                 <div class="col col-xl-6">
-                    <img style="width: 450px; height: 250px;" src="assets/images/logo_sna_noir.png"
-                         class=""
-                         alt="">
+                    <img class="uniform-image" src="assets/images/UEFA_Champions_League_logo.svg" alt="">
+                    <img class="uniform-image" src="assets/images/Logo_UEFA_Europa_League.svg" alt="">
+                    <img class="uniform-image" src="assets/images/Premier-League.png" alt="">
+                    <img class="uniform-image" src="assets/images/Logo_Ligue1.png" alt="">
+
                 </div>
                 <div class="col col-xl-6 accordion" id="accordionExample">
                     <div class="accordion-item">
@@ -154,7 +158,7 @@ require_once BASE_PROJET . '/src/_partials/header.php';
     </section>
 
     <!--Offres-->
-    <section id="offres">
+    <section id="offres" class="section-border">
         <h1 class="text-center">Nos différentes offres !</h1>
         <h5 class="text-center">Vous retrouverez toutes les offres que nous vous offrons au sein de notre
             entreprise</h5>
@@ -170,21 +174,24 @@ require_once BASE_PROJET . '/src/_partials/header.php';
                         </div>
                         <h3 class="text-center"><?= $produit["designation_prod"] ?></h3>
                         <p class="fs-2 text-center"><?= $produit["prix_prod"] ?>€</p>
-                        <a href="devis.php?id_prod=<?= $produit["id_prod"] ?>" class="btn bg-danger ">Commander</a>
+                        <div class="d-flex justify-content-between">
+                            <a href="devis.php?id_prod=<?= $produit["id_prod"] ?>" class="btn bg-danger text-white" style="width: 45%; font-size: 16px; padding: 10px 0;">
+                                Commander
+                            </a>
 
-                        <button type="button" class="btn btn-danger mb-3 mx-auto" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal2">
-                            En savoir plus
-                        </button>
+                            <button type="button" class="btn btn-outline-danger" style="width: 45%; font-size: 16px; padding: 10px 0;" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal<?= $produit["id_prod"] ?>">
+                                En savoir plus
+                            </button>
+                        </div>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        <div class="modal fade" id="exampleModal<?= $produit["id_prod"] ?>" tabindex="-1" aria-labelledby="exampleModalLabel"
                              aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Notre abonnement
-                                            journalier</h1>
+                                        <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel"><?= $produit["designation_prod"] ?></h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                     </div>
